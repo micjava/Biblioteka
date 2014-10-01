@@ -2,27 +2,30 @@
 <!DOCTYPE>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
-</head>
-<body>
 
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Magazyn</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<h1>
+	Formularz danych
+</h1>
 	<form:form modelAttribute="towar">
-		Nazwa: <form:input path="nazwa" />
+		Nazwa:     <form:input path="nazwa" />
 		<br>
-		Opis: <form:input path="opis" />
+		Opis:      <form:input path="opis" />
 		<br>
-				Cena: <form:input path="cena" />
+                Cena:      <form:input path="cena" />
 		<br>
-				Ilosc: <form:input path="ilosc" />
+		Ilo&#347&#263:     <form:input path="ilosc" />
 		<br>
-				Kategoria: <form:input path="kategoria" />
+                Kategoria: <form:input path="kategoria" />
 		<br>
 		<input type="submit" value="Dodaj" formaction="magazyn"
 			formmethod="post" />
-
-
-
 	</form:form>
 
 	<form action="magazyn" method="get">
@@ -38,14 +41,14 @@
 
 	<table>
 		<tr>
-			<td><a href="magazyn?sort=0">Id</a></td>
-			<td><a href="magazyn?sort=1">Nazwa</a></td>
-			<td><a href="magazyn?sort=2">Opis</a></td>
-			<td><a href="magazyn?sort=3">Cena</a></td>
-			<td><a href="magazyn?sort=4">Ilosc</a></td>
-			<td><a href="magazyn?sort=5">Kategoria</a></td>
-			<td>Usu&#324;</td>
-			<td>Zmie&#324;</td>
+			<th><a href="magazyn?sort=0">Id</a></th>
+			<th><a href="magazyn?sort=1">Nazwa</a></th>
+			<th><a href="magazyn?sort=2">Opis</a></th>
+			<th><a href="magazyn?sort=3">Cena</a></th>
+			<th><a href="magazyn?sort=4">Ilo&#347&#263</a></th>
+			<th><a href="magazyn?sort=5">Kategoria</a></th>
+			<th>Usu&#324;</th>
+			<th>Zmie&#324;</th>
 		</tr>
 		<c:forEach var="towar" items="${magazyn}">
 			<tr>
@@ -61,5 +64,8 @@
 			</tr>
 		</c:forEach>
 	</table>
+       <footer>
+           <p id="1">Magazyn</p>
+</footer>
 </body>
 </html>

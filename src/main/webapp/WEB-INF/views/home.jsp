@@ -1,12 +1,14 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page session="false" %>
-<html>
-<head>
-	<title>Home</title>
-</head>
+<html>  
+    <head>
+        <title>Home</title>
+            <link rel="stylesheet" href="style.css"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
 <body>
 <h1>
-	Hello world!  
+	Magazyn
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
@@ -17,5 +19,8 @@
 		</li>
                 
 </ul>
+         <footer>
+           <p id="1">Magazyn</p>
+</footer>
 </body>
 </html>
