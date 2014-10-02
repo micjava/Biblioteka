@@ -1,36 +1,43 @@
-body {background-color:whitesmoke}
+body {background-color:whitesmoke;
+font-family:arial,helvetica, sens-serif;
+margin:0;
+	padding:0;
+	text-align:left;
+	font-size:13px;}
 p    {color:scrollbar}
-#1 {color:#ffffff}
+h1{background-repeat: no-repeat;
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;}
 footer{
     background-color: black;
        text-align:center;
        font-size: medium
 }
-table {
-    font-family: "Courier New", Courier, monospace;
+table#t2 {
+    font-family: arial,helvetica, sens-serif;
     width: 100%;
     border-collapse: collapse;
 }
 
-td,  th {
+table#t2 td,  th {
     font-size: 1em;
     border: 1px solid #000000;
     padding: 3px 7px 2px 7px;
-}
-
-th {
     font-size: 1.1em;
     text-align: left;
     padding-top: 5px;
     padding-bottom: 4px;
     background-color: #dae956 ;
+    
+ table#t2 tr.alt td{
     color: #000000;
-}
-tr.alt td {
-    color: #000000;
-    background-color: #EAF2D3;
+    background-color: whitesmoke;
 }
 form {
-    width: 150px;
-    margin-left: 30px;
+    text-align: center;
+}
+table#t1 {
+    width:50%;
 }

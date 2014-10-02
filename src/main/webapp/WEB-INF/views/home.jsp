@@ -16,8 +16,9 @@
 <ul>
 		<li>
 			<a href="<c:url value="/magazyn" />" >Magazyn</a>
+                        
 		</li>
-                
+               <li> <a href="<c:url value="/magazynzmien"/>">Magazyn zmien</a> </li>
 </ul>
          <footer>
            <p id="1">Magazyn</p>
