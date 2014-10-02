@@ -6,7 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Magazyn</title>
-<link rel="stylesheet" href=""<c:url value="/resources/style.css"/>
+
+<link href="${pageContext.request.contextPath}/resources/style.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
