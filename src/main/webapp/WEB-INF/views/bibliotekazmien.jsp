@@ -7,12 +7,12 @@
 </head>
 <body>
 
-	<form:form modelAttribute="towar">
-		Nazwa: <form:input path="nazwa" />
+	<form:form modelAttribute="ksiazka">
+		Tytul: <form:input path="tytul" />
 		<br>
 		Opis: <form:input path="opis" />
 		<br>
-				Cena: <form:input path="cena" />
+				Cena: <form:input path="nazwiskoAutora" />
 		<br>
 				Ilosc: <form:input path="ilosc" />
 		<br>

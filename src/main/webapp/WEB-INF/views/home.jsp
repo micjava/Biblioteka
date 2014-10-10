@@ -8,20 +8,20 @@
     </head>
 <body>
 <h1>
-	Magazyn
+	Biblioteka
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
 
 <ul>
 		<li>
-			<a href="<c:url value="/magazyn" />" >Magazyn</a>
+			<a href="<c:url value="/biblioteka" />" >Biblioteka</a>
                         
 		</li>
-               <li> <a href="<c:url value="/magazynzmien"/>">Magazyn zmien</a> </li>
+               <li> <a href="<c:url value="/bibliotekazmien"/>">Biblioteka zmien</a> </li>
 </ul>
          <footer>
-           <p id="1">Magazyn</p>
+           <p id="1">Biblioteka</p>
 </footer>
 </body>
 </html>
