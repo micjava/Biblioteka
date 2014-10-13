@@ -34,6 +34,7 @@ public class BilbliotekaDaoMemory implements BibliotekaDao {
 	public synchronized void updateKsiazka(Ksiazka k) {
 		// TODO Auto-generated method stub
 		dane.set((int)k.getId(), k);
+                
 	}
 
 	@Override
@@ -43,9 +44,12 @@ public class BilbliotekaDaoMemory implements BibliotekaDao {
 	}
 
 	@Override
-	public synchronized void removeKsiazka(long id) {
-		// TODO Auto-generated method stub
+	public synchronized void removeKsiazka(long id, Ksiazka k) {
+
+		if(k.getIlosc()==1)
 		dane.remove((int)id);
+                else
+                    k.setIlosc(1);
 	}
 
 	@Override

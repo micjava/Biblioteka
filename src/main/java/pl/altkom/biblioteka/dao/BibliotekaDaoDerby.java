@@ -61,7 +61,8 @@ public class BibliotekaDaoDerby implements BibliotekaDao {
     }
 
     @Override
-    public void removeKsiazka(long id) {
+    public void removeKsiazka(long id, Ksiazka k) {
+        // to Ksiazka k usunac i dziala ale wszystkie naraz ksiazki
         String SQL = "delete from ksiazki where id = ?";
         jdbcTemplate.update(SQL, id);
     }

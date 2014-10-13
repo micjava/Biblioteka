@@ -11,7 +11,7 @@ public interface BibliotekaDao {
 
 	public Ksiazka getKsiazka(long id);
 
-	public void removeKsiazka(long id);
+	public void removeKsiazka(long id, Ksiazka k);
 
 	public List<Ksiazka> getAllSortedKsiazka(int atrybut, String s);
 	

@@ -43,5 +43,15 @@ form {
     text-align: center;
 }
 table#t1 {
-    width:50%;
+    width:40%;
+    border: 1px solid #000000;
+}
+table#t11 {
+    width:65%;
+    border: 1px solid #000000;
+}
+
+table#t111 {
+    width:20%;
+    border: 1px solid #000000;
 }
