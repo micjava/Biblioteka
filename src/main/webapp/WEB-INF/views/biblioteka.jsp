@@ -81,13 +81,19 @@
 </form>
 
 <table id="t2">
+    <tr><th colspan="3"></th>
+        <th colspan="3" ><center>Dane Autora</center></th>
+        <th colspan="4"></th>
+    </tr>
     <tr>
         <th><a href="biblioteka?sort=0">Id</a></th>
         <th><a href="biblioteka?sort=1">Tytu&#322</a></th>
         <th><a href="biblioteka?sort=2">Opis</a></th>
-        <th><a href="biblioteka?sort=3">Nazwisko Autora</a></th>
-        <th><a href="biblioteka?sort=4">Ilo&#347&#263</a></th>
-        <th><a href="biblioteka?sort=5">Kategoria</a></th>
+        <th><a href="biblioteka?sort=3">Imi&#281 Autora</a></th>
+        <th><a href="biblioteka?sort=4">Nazwisko Autora</a></th>
+        <th><a href="biblioteka?sort=5">Pochodzenie Autora</a></th>
+        <th><a href="biblioteka?sort=6">Ilo&#347&#263</a></th>
+        <th><a href="biblioteka?sort=7">Kategoria</a></th>
         <th>Usu&#324;</th>
         <th>Zmie&#324;</th>
     </tr>
@@ -96,7 +102,9 @@
             <td><c:out value="${ksiazka.id+1}" /></td>
             <td><c:out value="${ksiazka.tytul}" /></td>
             <td><c:out value="${ksiazka.opis}" /></td>
+            <td><c:out value="${ksiazka.imieAutora}" /></td>
             <td><c:out value="${ksiazka.nazwiskoAutora}" /></td>
+            <td><c:out value="${ksiazka.pochodzenieAutora}" /></td>
             <td><c:out value="${ksiazka.ilosc}" /></td>
             <td><c:out value="${ksiazka.kategoria}" /></td>
             <td><a href="biblioteka?id=${ksiazka.id}&action=delete">Usu&#324;</a></td>
