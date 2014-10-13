@@ -2,17 +2,10 @@ package pl.altkom.biblioteka.model;
 
 import java.io.Serializable;
 import java.util.Comparator;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
 
-@Entity
-@Table( name="pb_ksiazki" )
+
 public class Ksiazka implements Serializable, Comparable {
 
-    @Id
-    @GeneratedValue(generator="increment")
     private long id;
     private String tytul;
     private String opis;

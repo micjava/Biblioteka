@@ -1,4 +1,5 @@
 <%@include file="./includes/common.jsp"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE>
 <html>
 <head>
@@ -16,7 +17,7 @@
            
             <table id="t1">
                 <tr>
-		<td><label for="tytul">Tytu?:</label></td> </label></td>
+		<td><label for="tytul">Tytu&#322:</label></td> </label></td>
                 <td><form:input path="tytul" required="true"/></td>
                 </tr>
 		<tr>
@@ -24,7 +25,7 @@
                 <td><form:input path="opis" required="true"/></td>
                 </tr>
 		<tr>
-               <td><label for="imieAutora"> Imi?: </label></td>     
+               <td><label for="imieAutora"> Imi&#281: </label></td>     
                <td><form:input path="imieAutora" required="true" /></td>
                </tr>
                <td><label for="nazwiskoAutora"> Nazwisko: </label></td>     
@@ -50,7 +51,7 @@
 	<form action="biblioteka" method="get">
 		<input type="text" value=".*" name="wyrazenie" ><br> 
 		<select name="kategoria">
-			<option value="1" >Tytul</option>
+			<option value="1" >Tytu&#322</option>
 			<option value="2" >Opis</option>
 			<option value="5" >Kategoria</option>
 		</select><br>
@@ -61,7 +62,7 @@
 	<table id="t2">
 		<tr>
 			<th><a href="biblioteka?sort=0">Id</a></th>
-			<th><a href="biblioteka?sort=1">Tytul</a></th>
+			<th><a href="biblioteka?sort=1">Tytu&#322</a></th>
 			<th><a href="biblioteka?sort=2">Opis</a></th>
 			<th><a href="biblioteka?sort=3">Nazwisko Autora</a></th>
 			<th><a href="biblioteka?sort=4">Ilo&#347&#263</a></th>

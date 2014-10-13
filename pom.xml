@@ -116,13 +116,6 @@
 			<version>1.2</version>
 		</dependency>
 
-                <dependency>
-                    <groupId>javax</groupId>
-                    <artifactId>javaee-api</artifactId>
-                    <version>6.0</version>
-                </dependency>
-
-
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
