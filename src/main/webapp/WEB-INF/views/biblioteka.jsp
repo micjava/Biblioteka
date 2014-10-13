@@ -47,7 +47,7 @@
                     <option value="Historyczna">Historyczna</option>
                     <option value="Horror">Horror</option>
                     <option value="Literatura popularnonaukowa">Literatura popularnonaukowa</option>
-                    <option value="Literatura dziecięca">Literatura dzieci&#281ca</option>
+                    <option value="Literatura dzieci&#281ca">Literatura dzieci&#281ca</option>
                     <option value="Klasyka">Klasyka</option>
                     <option value="Poezja">Poezja</option>
                     <option value="Przygodowa">Przygodowa</option>
