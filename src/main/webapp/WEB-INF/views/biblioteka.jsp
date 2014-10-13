@@ -75,7 +75,9 @@
 				<td><c:out value="${ksiazka.id+1}" /></td>
 				<td><c:out value="${ksiazka.tytul}" /></td>
 				<td><c:out value="${ksiazka.opis}" /></td>
-				<td><c:out value="${ksiazka.nazwiskoAutora}" /></td>
+				<td><c:out value="${ksiazka.imieAutora}" /></td>
+                                <td><c:out value="${ksiazka.nazwiskoAutora}" /></td>
+                                <td><c:out value="${ksiazka.pochodzenieAutora}" /></td>
 				<td><c:out value="${ksiazka.ilosc}" /></td>
 				<td><c:out value="${ksiazka.kategoria}" /></td>
 				<td><a href="biblioteka?id=${ksiazka.id}&action=delete">Usu&#324;</a></td>
