@@ -2,16 +2,24 @@ package pl.altkom.biblioteka.model;
 
 import java.io.Serializable;
 import java.util.Comparator;
+import org.hibernate.validator.constraints.NotEmpty;
+import org.hibernate.validator.constraints.Range;
 
 
 public class Ksiazka implements Serializable, Comparable {
 
     private long id;
+    @NotEmpty(message="Pole nie może być puste")
     private String tytul;
+    @NotEmpty(message="Pole nie może być puste")
     private String opis;
+    @NotEmpty(message="Pole nie może być puste")
     private String imieAutora;
+    @NotEmpty(message="Pole nie może być puste")
     private String nazwiskoAutora;
+    @NotEmpty(message="Pole nie może być puste")
     private String pochodzenieAutora;
+    @Range(min=1, max=99, message = "Ilość książek powinna się zawięrać pomiędzy 1 a 99")
     private int ilosc;
     private String kategoria;
 
