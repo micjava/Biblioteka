@@ -37,7 +37,7 @@ public class BibliotekaController {
 		if ((request.getParameter("id") != null)
 				&& (request.getParameter("action") != null)) {
 			if (request.getParameter("action").equals("delete")) {
-				md.removeKsiazka(Integer.parseInt(request.getParameter("id")),md.getKsiazka(id));
+				md.removeKsiazka(Integer.parseInt(request.getParameter("id")));
 			}
 			if (request.getParameter("action").equals("update")) {
 				zmiana = true;

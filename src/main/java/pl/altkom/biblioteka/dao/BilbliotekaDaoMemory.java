@@ -44,12 +44,11 @@ public class BilbliotekaDaoMemory implements BibliotekaDao {
 	}
 
 	@Override
-	public synchronized void removeKsiazka(long id, Ksiazka k) {
+	public synchronized void removeKsiazka(long id) {
 
-		if(k.getIlosc()==1)
+
 		dane.remove((int)id);
-                else
-                    k.setIlosc(1);
+
 	}
 
 	@Override

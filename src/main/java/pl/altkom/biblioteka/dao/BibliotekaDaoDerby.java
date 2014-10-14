@@ -36,7 +36,7 @@ public class BibliotekaDaoDerby implements BibliotekaDao {
 
             // jdbcTemplate.execute(sql1);
             jdbcTemplate.update(sql, new Object[]{t.getTytul(), t.getOpis(),
-                t.getImieAutora(), t.getNazwiskoAutora(), t.getPochodzenieAutora(),t.getIlosc(), t.getKategoria()});
+                t.getImieAutora(), t.getNazwiskoAutora(), t.getPochodzenieAutora(), t.getIlosc(), t.getKategoria()});
         } catch (Exception e) {
             System.out.println(e.getMessage());
             e.printStackTrace();
@@ -47,7 +47,7 @@ public class BibliotekaDaoDerby implements BibliotekaDao {
     @Override
     public void updateKsiazka(Ksiazka k) {
         String SQL = "update ksiazki set tytul = ?, opis = ?, imieAutora = ?, nazwiskoAutora = ?, pochodzenieAutora = ?, ilosc = ?, kategoria = ? where id = ?";
-        jdbcTemplate.update(SQL, k.getTytul(), k.getOpis(), k.getImieAutora(), k.getNazwiskoAutora(), k.getPochodzenieAutora(), 
+        jdbcTemplate.update(SQL, k.getTytul(), k.getOpis(), k.getImieAutora(), k.getNazwiskoAutora(), k.getPochodzenieAutora(),
                 k.getIlosc(), k.getKategoria(), k.getId());
         return;
     }
@@ -61,10 +61,19 @@ public class BibliotekaDaoDerby implements BibliotekaDao {
     }
 
     @Override
-    public void removeKsiazka(long id, Ksiazka k) {
+    public void removeKsiazka(long id) {
         // to Ksiazka k usunac i dziala ale wszystkie naraz ksiazki
-        String SQL = "delete from ksiazki where id = ?";
-        jdbcTemplate.update(SQL, id);
+        String SQL1 = "select * from ksiazki where id = ?";
+        Ksiazka ksiazka = jdbcTemplate.queryForObject(SQL1, new Object[]{id},
+                new KsiazkaMapper());
+        if (ksiazka.getIlosc() > 0) {
+            String SQL2 = "update ksiazki set ilosc = ilosc - 1 where id = ?";
+            jdbcTemplate.update(SQL2, id);
+        } else {
+            String SQL3 = "delete from ksiazki where id = ?";
+            jdbcTemplate.update(SQL3, id);
+        }
+
     }
 
     @Override
