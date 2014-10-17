@@ -1,19 +1,19 @@
 body {background-color:whitesmoke;
-font-family:arial,helvetica, sens-serif;
-margin:0;
-	padding:0;
-	text-align:left;
-	font-size:13px;}
+      font-family:arial,helvetica, sens-serif;
+      margin:0;
+      padding:0;
+      text-align:left;
+      font-size:13px;}
 p    {color:scrollbar}
 h1{background-repeat: no-repeat;
-    padding: 10px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    text-align: center;}
+   padding: 10px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   text-align: center;}
 footer{
     background-color: black;
-       text-align:center;
-       font-size: medium
+    text-align:center;
+    font-size: medium
 }
 table#t2 {
     font-family: arial,helvetica, sens-serif;
@@ -26,32 +26,55 @@ table#t2 td,  th {
     border: 1px solid #000000;
     padding: 3px 7px 2px 7px;
     font-size: 1.1em;
+    
     text-align: left;
+    
     padding-top: 5px;
     padding-bottom: 4px;
     background-color: azure ;
+    color:black
 }  
- table#t2 tr.alt td{
+table#t2 tr.alt td{
     color: #000000;
     background-color: azure;
 }
 table#t2 th{
-    
-    background-color: tomato;
+
+    background-color: yellowgreen;
 }
 form {
     text-align: center;
 }
 table#t1 {
     width:40%;
-    border: 1px solid #000000;
+    border: 1px solid white;
+    background-color: black;
 }
 table#t11 {
     width:65%;
-    border: 1px solid #000000;
+    border: 1px solid white;
+    background-color: black;
 }
 
 table#t111 {
     width:20%;
-    border: 1px solid #000000;
+    border: 1px solid white;
+    background-color: black;
 }
+
+table#tzmien {
+    
+      margin-right: 50%;
+      margin-left: 100%;
+      margin-top: 30%;
+      width:100%;
+}
+
+#background1 {
+    background-image: url('https://bookeriada.pl/wp-content/uploads/2013/03/Slowa.jpg');
+}
+
+#image2{
+position:absolute;
+}
+
