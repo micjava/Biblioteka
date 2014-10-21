@@ -10,7 +10,10 @@
     <body>
 
         <style>
-
+            
+            body, 
+            a:hover {cursor: url(http://ani.cursors-4u.net/others/oth-9/oth840.cur), progress !important;}
+            
             #myDIV {
                 color: red;
                 border: 1px solid black;
@@ -58,6 +61,9 @@
                 padding:5px;	 	 
             }
         </style>
+        <a href="http://www.cursors-4u.com/cursor/2013/04/30/cute-brown-pencil.html" target="_blank" title="Cute Brown Pencil">
+            <img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Cute Brown Pencil" style="position:absolute; top: 0px; right: 0px;" />
+            </a>
         <div id="header">
             <h1>Biblioteka X</h1>
         </div>
@@ -80,21 +86,11 @@
 <b>Pamiętaj! Nie jesteś anonimowy:</b>
 <br/>  Twoja Lokalizacja : ${locale} 
 <br/>  Twój system operacyjny : ${os} ver.: ${os3}w architekturze: ${os2}
-<br/>  Twój IP :  <i id="demo"></i> 
+<br/>  Twój IP :  <i id="demo2"></i> 
+<script type="text/javascript" src="http://l2.io/ip.js?var=myip"></script>
+                                                      <!-- ^^^^ -->
+<script>document.getElementById("demo2").innerHTML = myip;</script>
 
-<script type="application/javascript">
-var ipaddress;
-function getip(json){
-    //alert(json.ip); // alerts the ip address
-    
-    ipaddress = json.ip;
-    document.getElementById("demo").innerHTML = ipaddress;
-    
-    }
-    
-</script>
-<script type="application/javascript" src="http://jsonip.appspot.com/?callback=getip">
-</script>
 
             <br/>  <br/>
             <div id="myDIV">REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA</div>

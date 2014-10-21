@@ -86,8 +86,8 @@
             <a href="<c:url value="/biblioteka" />" >Katalog</a>
             <P>  Aktualny czas na serwerze: ${serverTime}. </P>
 
-            <A HREF="http://localhost:8084/biblioteka">
-                <IMG SRC="http://i60.photobucket.com/albums/h27/thecremeegg/Gallery-Amazoncouk-Amaz-009.jpg" alt="Logo" style="width:200px;height:120px"></a>
+            <A HREF="<c:url value="/biblioteka" />">
+                <IMG SRC="http://media2.giphy.com/media/PwUEE2fhR00xi/giphy.gif" alt="Logo" style="width:200px;height:120px"></a>
             <br/>  <br/>
             <div id="myDIV">REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA REKLAMA</div>
 

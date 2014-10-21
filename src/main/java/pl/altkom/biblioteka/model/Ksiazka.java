@@ -14,13 +14,13 @@ public class Ksiazka implements Serializable, Comparable {
     private String tytul;
     @NotEmpty(message="Pole nie może być puste")
     private String opis;
-    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ\\\\.\\\\\\-\\\\\\s]*", message="Pole nie może zawierać cyfr")
+    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+", message="Niepoprawne dane")
     @NotEmpty(message="Pole nie może być puste")
     private String imieAutora;
-    @Pattern(regexp="[a-zA-Z]+", message="Pole nie może zawierać cyfr")
+    @Pattern(regexp="[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+[\\\\.]?[\\\\\\-]?[\\\\\\s]?[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+", message="Niepoprawne dane")
     @NotEmpty(message="Pole nie może być puste")
     private String nazwiskoAutora;
-    @Pattern(regexp="[a-zA-Z]+", message="Pole nie może zawierać cyfr")
+    @Pattern(regexp="[a-zA-Z]+", message="Pole może zawierać tylko litery")
     @NotEmpty(message="Pole nie może być puste")
     private String pochodzenieAutora;
     @Range(min=1, max=99, message = "Liczba książek powinna się zawięrać pomiędzy 1 a 99")
